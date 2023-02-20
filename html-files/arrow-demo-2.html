@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow demo</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+    <script>
+        const students = [
+            {
+                id: 101,
+                name: 'Anisul Islam',
+                gpa: 2.65,
+            },
+            {
+                id: 102,
+                name: 'Rakibul Islam',
+                gpa: 3.95,
+            },
+            {
+                id: 103,
+                name: 'Rabeya Islam',
+                gpa: 3.05,
+            },
+            {
+                id: 104,
+                name: 'Fahad Islam',
+                gpa: 2.62,
+            }
+        ]
+
+        function studentNames(){
+            return students.filter(function(x){
+               return x.gpa > 3 
+            }).map(function(y){
+                return y.name;
+            });
+        }
+        const studentNames2 = () =>students.filter((x)=> x.gpa>3).map((y)=>y.name);
+
+        
+
+        console.log(studentNames2())
+        // console.log(studentNames());
+
+    </script>
+</body>
+</html>

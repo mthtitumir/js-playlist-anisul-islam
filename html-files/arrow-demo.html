@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    
+
+
+    <script src="../js72-arrow-function-1.js"></script>
+    <script>
+        function display(){
+            console.log("I am arrow function");
+
+        }
+        // arrow function 
+        const display2 = () => {
+            console.log("I am arrow display2");
+        }
+        display2();
+        display();
+
+        // another one 
+        function square(){
+            return "Hi I am message one!";
+        }
+        console.log(square());
+        // another one arrow function 
+        const message2 = () => {
+            return "Hi I am message two!";
+        }
+        // same code ?
+        // const message2 = () => {return "hi, i am message two modified!"};
+        // const message2 = () => "hi, i am message two modified!"; return bad dile second bracket o bad dite hobe 
+        // console.log(message2());
+
+        function add1(num1, num2){
+            return num1 + num2;
+        }
+        console.log(add1(101, 104));
+
+        const add2 = (num1, num2) => {
+            return num1+num2
+        }
+        console.log(add2(101, 104));
+
+    </script>
+</body>
+</html>
